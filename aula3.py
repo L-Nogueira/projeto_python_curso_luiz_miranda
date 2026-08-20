@@ -6,8 +6,18 @@ Python possui tipagem = Dinâmica / Forte
     Forte - Significa que a linguagem não aceita operações entre dois tipos diferentes, é necessário converter um em outro
     
 str -> string -> texto
-Strings são textos dentro de aspas
+Strings são textos dentro de aspas, simples ou duplas
 
 '''
 
-print(1234)
+print('Lavouisier')
+print("Lavouisier")
+
+#Caractere de escape (útil para mostrar elementos que geralmente o interpretador leria como parte da sintaxe)
+print("Lavouisier \"Nogueira\"")
+
+#Para não ter que usar elementos de escape, que poluem o código, é possivel somente usar os dois tipos de aspas combinados
+print('Lavouisier "Nogueira"')
+
+#raw string (imprime inclusive os elementos de escape, útil para trabalhar com expressões regulares)
+print(r"Lavouisier \"Nogueira\"")
