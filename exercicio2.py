@@ -8,4 +8,5 @@ weigh = 95
 bmi = weigh / (heigh**2)
 
 print(f'{name} is {heigh:.2f} m tall,')
-print(f'He has {weigh} kg and his BMI is: {bmi:.2f}')
+print(f'He has {weigh} kg')
+print(f'and his BMI is: {bmi:.2f}')
