@@ -21,7 +21,9 @@ DENTRO_RANGE_SUPERIOR = posicao_carro <= (LOCAL_RADAR + RADAR_RANGE)
 DENTRO_RANGE_INFERIOR = posicao_carro >= (LOCAL_RADAR - RADAR_RANGE)
 EXCESSO_VELOCIDADE = velocidade_carro > RADAR_1
 
+#Lógica para multar ou não
 if (DENTRO_RANGE_INFERIOR and DENTRO_RANGE_SUPERIOR) and EXCESSO_VELOCIDADE:
     print(f'Você foi autuado por excesso de velocidade por transitar à {velocidade_carro} Km/h, em uma via de {RADAR_1} Km/h.')
+
 elif (DENTRO_RANGE_INFERIOR and DENTRO_RANGE_SUPERIOR) and (not EXCESSO_VELOCIDADE):
     print(f'O veículo passou pelo radar, dentro do limite de velocidade da via: {RADAR_1} Km/h.')
