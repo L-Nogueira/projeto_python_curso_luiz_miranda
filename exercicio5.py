@@ -3,15 +3,18 @@
 numero = input('Digite um número inteiro: ')
 
 try:
-    numero_float = float(numero)
-    if numero_float % 2 == 0:
-        print(f'O numero {numero_float:.0f}, é par!')
-    elif numero_float % 2 == 1:
-        print(f'O número {numero_float:.0f}, é impar!')
-    elif numero_float % 2 != 0 and numero_float % 2 != 1:
-        print(f'O número ({numero_float}) não é inteiro.')
+    numero_int = int(numero)
+    texto_par_impar = 'par' if numero_int % 2 == 0 else 'impar'
+
+    print(f'O número {numero_int}, é {texto_par_impar}.')
+
 except:
-    print(f'({numero}) não é um número...')
+    try:
+        numero_float = float(numero)
+        print(f'O número {numero_float}, não é inteiro.')
+    except:
+        print(f'Você não digitou um número.')
+
 
 print('\n')
 
@@ -40,7 +43,7 @@ print('\n')
 #Pedir o nome do usuário, e avaliar o tamanho do nome
 
 print('=' * 30)
-nome = input('Digite o seu nome: ')
+nome = input('Digite o seu primeiro nome: ')
 tamanho_nome = len(nome)
 try:
     if nome.isalpha():
