@@ -50,7 +50,7 @@ while True:
             elif opcao_int == 3:
                 resultado = prim_num * seg_num
                 print('-' * 50 )
-                print(f'RESULTADO: {prim_num} * {seg_num} = {resultado}\n')
+                print(f'RESULTADO: {prim_num} x {seg_num} = {resultado}\n')
                 input('Aperte enter para continuar.')
 
 
